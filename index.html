@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+    <title>Arc of Proof</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap');
+      
+      body {
+        font-family: 'Inter', -apple-system, sans-serif;
+        background-color: #ffffff;
+        color: #1a1a1a;
+        -webkit-font-smoothing: antialiased;
+        overscroll-behavior-y: contain; /* Prevents pull-to-refresh on mobile */
+      }
+      
+      .mono {
+        font-family: 'IBM+Plex+Mono', monospace;
+      }
+
+      /* Minimalist scrollbar */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e5e5e5;
+      }
+      
+      /* Fade quietly class */
+      .fade-quietly {
+        opacity: 0.3;
+        transition: opacity 0.6s ease;
+        text-decoration: line-through;
+      }
+
+      /* Tap highlight removal for mobile */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
